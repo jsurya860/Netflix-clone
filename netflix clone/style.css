@@ -380,7 +380,9 @@ footer .foot {
 
     }
 
-    .text{gap: 4px;}
+    .text {
+        gap: 4px;
+    }
 
     .text>:nth-child(1) {
         font-weight: 700;
@@ -487,9 +489,10 @@ footer .foot {
     @media (max-width: 440px),
     (max-height: 550px) {
 
-        .hero{
+        .hero {
             margin: 76px 0px;
         }
+
         .hero span {
             margin: 0px;
         }
@@ -506,3 +509,4 @@ footer .foot {
         }
 
     }
+}
