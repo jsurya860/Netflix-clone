@@ -120,7 +120,6 @@ img {
     display: flex;
     flex-direction: column;
     gap: 11px;
-    width: 80vw;
 
 
 }
@@ -297,11 +296,7 @@ h3 {
     padding: 21px 0px;
 }
 
-
-
-
-footer,
-.footer a {
+footer, .footer a {
     color: rgb(130, 130, 130);
     margin: 11px;
 }
