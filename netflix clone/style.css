@@ -120,7 +120,8 @@ img {
     display: flex;
     flex-direction: column;
     gap: 11px;
-    width: 768px;
+    width: 80vw;
+
 
 }
 
@@ -143,7 +144,7 @@ img {
 .video img {
     width: 445px;
     position: relative;
-    left: 50px;
+    left: auto;
     z-index: 10;
     background: none;
 }
@@ -208,7 +209,6 @@ img {
     display: flex;
     flex-direction: column;
     gap: 11px;
-    width: 788px;
     text-align: center;
 
 }
@@ -227,15 +227,13 @@ img {
 }
 
 .section-4 img {
-    margin: 0px 62px;
-    left: 0px;
+    left: auto;
 }
 
 .S4-text {
     display: flex;
     flex-direction: column;
     gap: 11px;
-    width: 768px;
     text-align: left;
 
 }
@@ -243,20 +241,16 @@ img {
 .S4-text>:nth-child(1) {
     font-weight: 900;
     font-size: 48px;
-
-
 }
 
 .S4-text>:nth-child(2) {
     font-weight: 400;
     font-size: 24px;
-
 }
 
 .faq {
     text-align: center;
     color: white;
-    margin: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -266,8 +260,12 @@ img {
 
 .faq h1,
 h3 {
-    margin: 9px;
+    margin: auto 25px;
     text-align: center;
+}
+
+.faq h3 {
+    margin-top: 65px;
 }
 
 .questions {
@@ -299,9 +297,7 @@ h3 {
     padding: 21px 0px;
 }
 
-.faq h3 {
-    margin-top: 65px;
-}
+
 
 
 footer,
@@ -394,10 +390,6 @@ footer .foot {
 
     }
 
-    .video img {
-        left: 8px;
-
-    }
 
     .video video {
         left: 65px;
@@ -427,7 +419,7 @@ footer .foot {
     }
 
     .S2-video video {
-        width: 410px;
+        width: 285px;
         position: relative;
         left: auto;
     }
@@ -449,7 +441,6 @@ footer .foot {
     }
 
     .S4-text {
-        width: 600px;
         text-align: center;
     }
 
@@ -463,4 +454,28 @@ footer .foot {
         font-size: 18px;
     }
 
+    @media only screen and (max-width:500px) {
+        .main {
+            height: 80vh;
+        }
+
+        .hero {
+            margin: 98px auto;
+            padding: 0px 15px;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .footer-item {
+            margin: 0px;
+
+        }
+
+        .footer a {
+            margin: 5px;
+        }
+    }
 }
