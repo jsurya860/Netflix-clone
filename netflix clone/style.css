@@ -35,12 +35,12 @@ nav {
     width: 70vw;
     margin: 0px auto;
     padding: 18px;
-    
+
 }
 
 img {
     width: 124px;
-   
+
 }
 
 
@@ -298,12 +298,14 @@ h3 {
     width: 124px;
     padding: 21px 0px;
 }
-.faq h3{
+
+.faq h3 {
     margin-top: 65px;
 }
 
 
-footer ,.footer a{
+footer,
+.footer a {
     color: rgb(130, 130, 130);
     margin: 11px;
 }
@@ -318,14 +320,16 @@ footer .foot {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: rgb(200, 200, 200);
-   margin: 0px auto;
+    margin: 0px auto;
 }
-.footer-item{
+
+.footer-item {
     display: flex;
     flex-direction: column;
-    margin:  21px ;
+    margin: 21px;
 }
-.btn{
+
+.btn {
     color: white;
     background: #000;
     border: 1px solid white;
@@ -333,11 +337,130 @@ footer .foot {
     font-size: 8px;
 
 }
-.btn img{
+
+.btn img {
     filter: invert(1);
     background: none;
     width: 11px;
-    margin:-9px 5px;
-   
+    margin: -9px 5px;
+
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    nav {
+        width: 90vw;
+    }
+
+    .hero>:nth-child(1) {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .hero>:nth-child(2),
+    .hero>:nth-child(3) {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .hero-btn {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .red-btn {
+        padding: 9px;
+    }
+
+    .section-tv {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .text>:nth-child(1) {
+        font-weight: 700;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .text>:nth-child(2) {
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+
+    }
+
+    .video img {
+        left: 8px;
+
+    }
+
+    .video video {
+        left: 65px;
+    }
+
+    .section-2 {
+        flex-direction: column;
+
+    }
+
+    .S2-text>:nth-child(1) {
+        font-weight: 700;
+        font-size: px;
+        text-align: center;
+    }
+
+    .S2-text>:nth-child(1) {
+        font-weight: 700;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .S2-text>:nth-child(2) {
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .S2-video video {
+        width: 410px;
+        position: relative;
+        left: auto;
+    }
+
+    .S3-text>:nth-child(1) {
+        font-weight: 700;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .S3-text>:nth-child(2) {
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .section-4 {
+        flex-direction: column;
+    }
+
+    .S4-text {
+        width: 600px;
+        text-align: center;
+    }
+
+    .S4-text>:nth-child(1) {
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    .S4-text>:nth-child(2) {
+        font-weight: 400;
+        font-size: 18px;
+    }
 
 }
