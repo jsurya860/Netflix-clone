@@ -32,7 +32,7 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    width: 70vw;
+    width: 80vw;
     margin: 0px auto;
     padding: 18px;
 
@@ -108,12 +108,12 @@ img {
 
 .section-tv {
     margin: 0px auto;
-    padding: 0px 119px;
+    padding: 5px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 595px;
+    height: 444px;
 }
 
 .text {
@@ -259,7 +259,7 @@ img {
 
 .faq h1,
 h3 {
-    margin: auto 25px;
+    margin: 11px 25px;
     text-align: center;
 }
 
@@ -296,7 +296,8 @@ h3 {
     padding: 21px 0px;
 }
 
-footer, .footer a {
+footer,
+.footer a {
     color: rgb(130, 130, 130);
     margin: 11px;
 }
@@ -339,9 +340,16 @@ footer .foot {
 }
 
 @media only screen and (max-width: 900px) {
+    .main {
+        height: 76vh;
+    }
 
     nav {
         width: 90vw;
+    }
+
+    .hero {
+        margin: 73px 25px;
     }
 
     .hero>:nth-child(1) {
@@ -371,6 +379,8 @@ footer .foot {
         align-items: center;
 
     }
+
+    .text{gap: 4px;}
 
     .text>:nth-child(1) {
         font-weight: 700;
@@ -473,4 +483,26 @@ footer .foot {
             margin: 5px;
         }
     }
-}
+
+    @media (max-width: 440px),
+    (max-height: 550px) {
+
+        .hero{
+            margin: 76px 0px;
+        }
+        .hero span {
+            margin: 0px;
+        }
+
+        .text>:nth-child(1) {
+            font-weight: 500;
+            font-size: 24px;
+        }
+
+        .text>:nth-child(2),
+        .text>:nth-child(3) {
+            font-weight: 200;
+            font-size: 12px;
+        }
+
+    }
